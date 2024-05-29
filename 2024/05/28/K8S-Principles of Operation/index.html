@@ -93,6 +93,11 @@
 <li>Worker Nodes(Linux or Windows)</li>
 </ul>
 <h3 id="The-Control-Plane"><a href="#The-Control-Plane" class="headerlink" title="The Control Plane"></a>The Control Plane</h3><p>The control plane is a collection of system services that implement the brain of Kubernetes. It exposes the API, schedules tasks, implement self-healing, manages scailing operations and more.</p>
+<ul>
+<li>The API Server<br>The API server is the frontend of Kubernetes, and all requests to change and query the state of the cluster go through it. Even internal control plane communication with each other via the API server</li>
+<li>The Cluster Store<br>The cluster store holds the desired state of all applications and cluster components and is the only stateful part of the control plane(etcd)</li>
+<li>Controllers and the controller manager</li>
+</ul>
 
       </div>
     </div>
